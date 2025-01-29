@@ -124,3 +124,55 @@
 # print(fruit)
 
 # print(len(fruit))
+
+
+
+# list1 = [1,2,3,4,5]
+# list2 = [6,7,8,9,2]
+# union= union.se(list1,list2)
+# print(union)
+
+
+# my = ["king","queen","kroen"]
+# print(my)
+
+
+# i = 1
+# for i in range(1,6):
+#     if i == 1:
+#         observe = int(input(" enter a observe value: "))
+#         if 20 < observe < 30:
+#             print(" test1 is normal ")
+#         else:
+#             print(" test1 is abnormal ")
+#     elif i == 2:
+#         observe = int(input(" enter a observed: "))
+#         if 35.5 < observe < 40:
+#             print(" test2 is normal ")
+#         else: 
+#             print(" test2 is abnormal ")
+#     elif i == 3:
+#         observe = int(input(" enter a observed: "))
+#         if 12 < observe < 15:
+#             print(" it is normal ")
+#         else:
+#             print(" it is abnormal ")
+#     elif i == 4:
+#         observe = int(input(" enter a observed: "))
+#         if 120 < observe < 150:
+#             print(" it is normal ")
+#         else:
+#             print(" it is abnormal ")
+#     elif i == 5:
+#         observe = int(input(" enter a observed: "))
+#         if 80 < observe < 120:
+#             print(" it is normal ")
+#         else:
+#             print(" it is not normal ")
+#     else:
+#         print(" out of range ")
+
+
+
+
+

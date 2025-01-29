@@ -1,12 +1,17 @@
-dict1 = { 1:'aravind',2:'harsha',3:'lalitha',4:'hanumanthu'}
-print(dict1)
-print(dict1[1])
-print(dict1.get(2))
+# d={1:"lolly",2:"jul"}
+print("jai ballayya")
 
-# updating value 
-dict1[1] = 'vikranth'
-print(dict1)
 
-# adding value
-dict1[5] = 'hanuman'
-print(dict1)
+# d[1]="june"           # to change the value 
+
+# del d("lolly")
+
+# d1=list(d.values())           # to convert values in list 
+
+# d1=list(d)                  # to list the key values
+
+# d1=tuple(d.values())         # to tuple the values 
+
+# d1=tuple(d)              # to tuple the key value
+
+# print(d1)
