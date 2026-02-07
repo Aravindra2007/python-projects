@@ -1,178 +1,207 @@
-# # # # # # # def is_power_of_two(n):
-# # # # # # #     # A power of 2 is a positive number with exactly one bit set
-# # # # # # #     if n <= 0:
-# # # # # # #         return False
-# # # # # # #     return (n & (n - 1)) == 0
-
-# # # # # # # # Input from the user
-# # # # # # # N = int(input("Enter an integer N: "))
-
-# # # # # # # # Check if N is a power of 2 and output the result
-# # # # # # # if is_power_of_two(N):
-# # # # # # #     print(f"Yes, {N} is a power of 2.")
-# # # # # # # else:
-# # # # # # #     print(f"No, {N} is not a power of 2.")
-
-
-# # # # # # # def power(n):
-# # # # # # #     if n < 0:
-# # # # # # #         return False
-# # # # # # #     return (n & (n - 1)) == 0
-
-# # # # # # # num = int(input(" enter a number "))
-# # # # # # # if power(num):
-# # # # # # #     print(" it is an power of two ")
-# # # # # # # else:
-# # # # # # #     print(" it is not the power of the two ")
-
-
-
-# # # # # # for i in range(1500,2702):
-# # # # # #     if i%7 == 0 and i%5 == 0:
-# # # # # #         print(i)
-
-
-
-# # # # # # armstrong
-# # # # # n=int(input())
-# # # # # k=len(str(n))
-# # # # # num=n
-# # # # # sum=0
-# # # # # for i in range(k):
-# # # # #     a=n%10
-# # # # #     c=a**3
-# # # # #     sum=sum+c
-# # # # #     n=n//10
-# # # # # if(sum==num):
-# # # # #     print("ams")
-# # # # # else:
-# # # # #     print("not")
-
-
-
-# # # # p=20
-# # # # q=10
-# # # # r=5
-# # # # s=p*q/r+q%r-p
-# # # # print(s)
-
-# # # tempertures = []
-
-# # # # for i in range(1,8):
-# # # #     temp = float(input(" enter the temparuters "))
-# # # #     tempertures.append(temp)
-
-# # # #     avg=sum(tempertures)/len(tempertures)
-
-# # # #     print(f" temparuters {temp}")
-
-# # # temp = []
-
-# # # for i in range(1,8):
-# # #     temp = float(input(" enter a number "))
-# # #     tempertures.append(temp)
-# # #     avg = sum(tempertures)/len(tempertures)
-
-# # #     print(f" {tempertures}")
-
-
-# age = int(input(" enter a age "))
-# movie = input(" enter a movie name ")
-# ticket = input(" (yes or no)")
-# if (age > 0 and movie == "G" and ticket == "yes"):
-#     print(" u r going to G moovie ")
-# elif (age > 0 and movie == "ka" and ticket == "yes"):
-#     print(" u r going to ka movie ")
+# s = "sms"
+# if(s==(s[::-1])):
+#     print("palindrome")
 # else:
-#     print(" u r not eligible for any movie ")
+#     print("notPalindrome")/
 
+# def fib(n):
+#     if n <= 1:
+#         return n
+#     return fib(n-1) +fib(n-2)
 
+# n = 6
+# print(fib(n))
 
-# n = int(input())
-# sum = 0
-# for i in range(n):
-#     sum = sum + i
-#     i += 1
-#     print(sum)
-
-
-# n = int(input(" enter "))
-# result = 1
-# i = 1
-# for i in range(1,n):
-#     result = result*i
-#     i += 1
-#     print(result)
-
-
-
-# fruit = ["banana","apple","grapes","mango","guva"]
-# print(fruit[3])
-
-# print(len(fruit))
-
-# print(fruit[5::-1])
-
-# fruit1 = ["orange"]
-# print(fruit+fruit1)
-
-
-# del(fruit[3])
-# print(fruit)
-
-# fruit.remove("banana")
-# print(fruit)
-
-# print(len(fruit))
-
-
-
-# list1 = [1,2,3,4,5]
-# list2 = [6,7,8,9,2]
-# union= union.se(list1,list2)
-# print(union)
-
-
-# my = ["king","queen","kroen"]
-# print(my)
-
-
-# i = 1
-# for i in range(1,6):
-#     if i == 1:
-#         observe = int(input(" enter a observe value: "))
-#         if 20 < observe < 30:
-#             print(" test1 is normal ")
-#         else:
-#             print(" test1 is abnormal ")
-#     elif i == 2:
-#         observe = int(input(" enter a observed: "))
-#         if 35.5 < observe < 40:
-#             print(" test2 is normal ")
-#         else: 
-#             print(" test2 is abnormal ")
-#     elif i == 3:
-#         observe = int(input(" enter a observed: "))
-#         if 12 < observe < 15:
-#             print(" it is normal ")
-#         else:
-#             print(" it is abnormal ")
-#     elif i == 4:
-#         observe = int(input(" enter a observed: "))
-#         if 120 < observe < 150:
-#             print(" it is normal ")
-#         else:
-#             print(" it is abnormal ")
-#     elif i == 5:
-#         observe = int(input(" enter a observed: "))
-#         if 80 < observe < 120:
-#             print(" it is normal ")
-#         else:
-#             print(" it is not normal ")
+# def prime(n):
+#     count = 0
+#     if n <= 1:
+#         return 1
 #     else:
-#         print(" out of range ")
+#         for i in range(2,n+1):
+#             if n % i == 0:
+#                 count += 1
+#         if(count == 1):
+#             return "Prime"
+#         else:
+#             return "NotPrime"
+        
+# n = 6
+# print(prime(n))
+
+
+
+# arr = [5,1,3,2,1,0]
+# arr.sort()
+# arr.pop(1)
+# print(arr)
+# print(arr[::-1])
+
+
+# arr = [5,1,3,2,5,0,0]
+# arr.sort()
+# print(arr)
+# for i in range(len(arr) - 1 ):
+#     if(arr[i] == arr[i-1]):
+#         arr.pop(i)
+# print(arr)
+
+
+# def Anagram(s1,s2):
+#     if(sorted(s1)== sorted(s2)):
+#         return "Anagram"
+#     else:
+#         return "Its Not"
+    
+# s1 = "hello"
+# s2 = "ellohs" 
+# print(Anagram(s1,s2))
+
+# s1 = "hello"
+# s2 = sorted(s1)
+# print(s2)
+# count = 0
+# for i in range(len(s2) -1):
+#     for j in range(i+1,len(s2) -1):
+#         if(s2(i) == s2(j)):
+#             count += count
+#     print(s2(i),count)
+
+# from collections import Counter
+# s = "hello"
+# print((Counter(s)))
+# print(dict(Counter(s)))
+
+
+# s1 = "hello"
+# freq = {}
+# for char in s1:
+#     if char in freq:
+#         freq[char] += 1
+#     else:
+#         freq[char] = 1
+# print(freq)
+
+
+# def fact(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact *= i
+#     return fact
+
+# print(fact(5))
+
+
+
+
+# n = 5
+# fact = 1
+# for i in range(1,n+1):
+#     fact *= i
+# print(fact)
+
+
+# def BinarySearch(arr,target):
+#     left,right = 0,len(arr)-1
+#     while left <= right:
+#         mid = (right + left)//2
+#         if arr[mid] == target:
+#             return mid
+#         elif arr[mid] <target:
+#             left = mid + 1
+#         else:
+#             right = mid - 1
+#     return -1
+
+# arr = [1,9,3,5,3,5,7,8]
+# target = 9
+# arr.sort()
+# print(arr)
+# print(BinarySearch,target)
+
+
+
+# def armstrong(n):
+#     return sum(int(d)**3 for d in str(n)) == n
+
+# print(armstrong(153))
+# print(armstrong(121))
+
+# arr = [1,1,2,3,2,3,4,4]
+# arr1 = list(set(arr))
+# print(arr1)
+# print(list(dict.fromkeys(arr)))
+
+# def Sum(n):
+#     return sum(int(i) for i in range(n+1))
+
+# print(Sum(5))
+
+# def leapyear(n):
+#     return (n%4==0 and n%100!=0) or (n%400 == 0)
+
+# print(leapyear(1892))
+
+
+# def Vowels(s):
+#     return sum(1 for ch in s.lower() if ch in "aeiou")
+
+# print(Vowels("Education"))
+
+# def Max(arr):
+#     return max(arr)
+# arr = [1,2,3,4,5,6,7,9]
+# print(Max(arr))
+
+
+# def Max(arr):
+#     arr.sort
+#     return arr[-1]
+
+# arr = [1,2,3,4,5,6,8,9]
+# print(Max(arr))
+# print(arr[:-1])
+
+# def Even(n):
+#     return ("Even" if n%2 == 0 else "odd")
+
+# print(Even(349))
+
+
+# def Sum(n):
+#     return sum(i for i in range(n+1) if i > 0 )
+
+# print(Sum(5))
+
+# import math
+# n = 26
+# b = int(math.sqrt(n))
+
+# if(b**2 == n):
+#     print("Perfect Square ")
+# else:
+#     print("Not perfect Square ")
 
 
 
 
 
+# n = 5
+# fact = 1
+# for i in range(1,n+1):
+#     fact *= i
+# print(fact)
+
+
+# def Fact(n):
+#     fact = 1
+#     for i in range(1,n+1):
+#         fact *= i
+#     return fact
+
+# n = int(input("enter a variable "))
+# print(Fact(5))
+
+"""
+import sys
+
+print(sys.version)"""
